@@ -50,7 +50,7 @@ address:
   - line: Address Line 2
 
 # Credits content
-credits: 'Powered by Jekyll. Photos from Unsplash. <a href="/impressum/" class="btn btn-lg btn-outline">Impressum</a>.' # add impressum as link
+credits: 'Powered by Jekyll.<br> <a href="/impressum/" class="btn btn-lg btn-outline">Impressum</a>.' # add impressum as link
 
 # Build settings
 markdown: kramdown

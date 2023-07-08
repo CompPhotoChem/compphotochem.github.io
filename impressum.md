@@ -1,4 +1,7 @@
-
+---
+layout: page
+title: Publications
+---
 
 ## Legal Notice
 

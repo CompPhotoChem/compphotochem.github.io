@@ -24,9 +24,29 @@
           </div>
           <div class="col-lg-8">
             <p>
-              {{ pub.authors }} <br>
-              {{ pub.pubtitle }} <br>
-              <i>{{ pub.journal }}</i> <b>{{ pub.year }}</b><br>
+              {{ pub.authors }} 
+              <br>
+              {{ pub.pubtitle }} 
+              <br>
+              {% if pub.journal %}
+                <i>{{ pub.journal }}</i>
+              {% endif %}
+              {% if pub.year %}
+                <b>{{ pub.year }}</b>
+              {% endif %}
+              {% if pub.volume %}
+                , {{ pub.volume }}
+              {% endif %}
+              {% if pub.issue %}
+                &nbsp(<i>{{ pub.issue }}</i>)
+              {% endif %}
+              {% if pub.pages %}
+                , {{ pub.pages }}
+              {% endif %}
+              {% if pub.doi %}
+                , DOI: <a href="https://doi.org/{{ pub.doi }}" </a>
+              {% endif %}
+              <br>
             </p>
             {% if pub.pubimg %}
             <br>

@@ -33,6 +33,24 @@
     {% endif %}
     {% endfor %}
 
+    <h2>New Try </h2>
+    {% for pub in site.pubs %}
+    {% if site.categories.2023 %}
+    <div class="row">
+      <div class="col-lg-1 text-center">
+          <h3 style="color:#7E5273"> {{ pub.number }} </h3>
+      </div>
+      <div class="col-lg-8">
+        <p>
+          {{ pub.authors }} <br>
+          {{ pub.title }} <br>
+          <i>{{ pub.journal }}</i> <b>{{ pub.year }}</b><br>
+        </p>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1>2022</h1>

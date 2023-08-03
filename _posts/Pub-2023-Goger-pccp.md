@@ -6,5 +6,5 @@ title: Data-Driven Tailoring of Molecular Dipole Polarizability and Frontier Orb
 authors: S. Góger, L. Medrano Sandonas, C. Müller, A. Tkatchenko
 img: TOC_PCCP_2023.png
 alt: TOC PCCP 2023
-categories: [2023]
+categories: [publication]
 ---

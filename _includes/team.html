@@ -1,0 +1,81 @@
+<!-- Team -->
+<section class="success" id="PI">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Head of Group</h2>
+        <hr class="star-light">
+        <br>
+      </div>
+    </div>
+   
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-1">
+        <h3>Dr. Carolin Müller</h3><br>
+        <p>
+          <!-- img -->
+          <img style="vertical-align: top;" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/members/carolin_mueller.png" width="300" alt="Dr. Carolin Müller" />
+          <br><br>
+          <!-- mail -->
+          <i class="fa-solid fa-envelope" style="font-size:16px;color:#2C001E;"></i>  <a href="mailto:carolin.mueller@ext.uni.lu, carolin.mueller6@googlemail.com" style="color:#FFFFFF">carolin.mueller@ext.uni.lu</a><br>
+          <!-- phone -->
+          <i class="fa-solid fa-phone" style="font-size:16px;color:#2C001E;"></i>  +49 xxx xxx <br>
+          <!-- office -->
+          <i class="fa-solid fa-location-dot" style="font-size:16px;color:#2C001E;"></i>  162a Avenue de la Faïencerie <br>
+          <i class="fa-solid fa-location-dot" style="font-size:16px;color:#7E5273;"></i>  L-1511 Luxembourg <br>
+          <i class="fa-solid fa-location-dot" style="font-size:16px;color:#7E5273;"></i>  BRB 2.08 <br>
+          <br>
+          <ul class="list-inline">
+            <li><a href="https://github.com/carolin-m"><i class="fa-brands fa-github" style="font-size:48px;color:#2C001E;"></i></a> </li>
+            <li><a href="https://orcid.org/0000-0002-5968-2216"><i class="fa-brands fa-orcid" style="font-size:48px;color:#2C001E;"></i></a> </li>
+            <li><a href="https://carolin-m.github.io/"><i class="fa-solid fa-globe" style="font-size:48px;color:#2C001E;"></i></a> </li>
+            <li><a href="https://www.linkedin.com/in/carolin-m%C3%BCller-b2581723b"><i class="fa-brands fa-linkedin" style="font-size:48px;color:#2C001E;"></i></a> </li>
+          </ul>
+        </p>
+      </div>
+      <div class="col-lg-7">
+        <p>Carolin Müller is a postdoctoral researcher at the University of Luxembourg (LUX) since June 2022. 
+          She previously held a postdoctoral position at Friedrich Schiller University Jena (GER) and completed her Bachelor (2013-2016) and Master of Science (2016-2018) degree in chemistry 
+          at Friedrich Schiller University Jena (GER) and Dublin City University (IRL). Her doctoral studies were completed at Friedrich Schiller University Jena (GER) between 2018 and 2021, 
+          under the guidance of Benjamin Dietzek-Ivanšić at the Institute of Physical Chemistry. Carolin has received several prestigious awards, including the Thuringian Research Award, 
+          the Albert-Weller Award, and the Dissertation Award. She also secured notable research grants, such as the Feodor Lynen Research Fellowship, the Kekulé Fellowship, the PROMOS Scholarship, 
+          and the Deutschlandstipendium.
+          <br>
+          <a href="https://carolin-m.github.io/about/" class="btn btn-lg btn-outline">Curriculum Vitæ</a>
+        </p>
+      </div>
+    </div> 
+    <br>   
+  </div>
+</section>
+
+<br>
+
+<section id="members">
+  <div class="container portfolio-flex-grid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/GroupHeader.png" alt="Group Header" />
+        <br><br>
+        <h2>Doctoral Students</h2>
+        <hr class="star-primary">
+        <br>
+      </div>
+    </div>
+    <div class="portfolio-flex-row">
+      {% for member in site.categories.phdmember %}
+      <div class="portfolio-flex-item portfolio-item">
+        <a href="#portfolioModal-{{ member.modal-id }}" class="portfolio-link" data-toggle="modal">
+          <div class="caption">
+            <div class="caption-content">
+              <i class="fa fa-search-plus fa-3x"></i>
+            </div>
+          </div>
+          <img src="img/members/{{ post.displayimg }}" class="img-responsive" alt="{{ post.alt }}">
+          <center><h3 style="color:#3C1028;">{{ member.name }}</h3></center>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

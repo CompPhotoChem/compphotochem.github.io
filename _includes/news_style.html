@@ -1,4 +1,4 @@
-<section id="pub">
+<section id="team">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -6,15 +6,70 @@
         <br><br>
         <h2>News</h2>
         <hr class="star-primary">
-        <br><br>
       </div>
     </div>
-
-    {% for news in site.categories.news %}
-        <div class="row">
-
-        </div>
-        <br><br>
-    {% endfor %}
   </div>
 </section>
+
+{% for post in site.categories.news %}
+  {% if post.color-bg %}
+  <section class="success" id="post">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          {% if post.fa %}
+            <h3><i class="{{ post.fa }}" style="font-size:36px;color:#FFFFFF;"></i>&nbsp {{ post.date }} – {{ post.title }}</h3><br>
+          {% else %}
+            <h3>{{ post.date }} – {{ post.title }}</h3><br>
+          {% endif %}
+          <!-- description -->
+          {% if post.description %}
+            <p>{{ post.description }}</p>
+          {% endif %}
+          {% if post.link_descr %}
+            <a href="{{ post.link_descr }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#FFFFFF;"></i>&nbsp Further Information</a>
+          {% endif %}
+        </div>
+        <div class="col-lg-3">
+          {% if post.postimg %}
+            <img class="img-responsive" src="{{ post.postimg }}" alt="{{ post.alt }}" />
+          {% endif %}
+          {% if post.link_img %}
+            <a href="{{ post.link_img }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#FFFFFF;"></i>&nbsp Further Information</a>
+          {% endif %}
+        </div>
+      </div> 
+    </div>
+  </section>
+  {% else %}
+  <!-- post with white background -->
+  <section id="post">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          {% if post.fa %}
+            <h3><i class="{{ post.fa }}" style="font-size:36px;color:#2C001E;"></i>&nbsp {{ post.date }} – {{ post.title }}</h3><br>
+          {% else %}
+            <h3>{{ post.date }} – {{ post.title }}</h3><br>
+          {% endif %}
+          <!-- description -->
+          {% if post.description %}
+            <p>{{ post.description }}</p>
+          {% endif %}
+          {% if post.link_descr %}
+            <a href="{{ post.link_descr }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#2C001E;"></i>&nbsp Further Information</a>
+          {% endif %}
+        </div>
+        <div class="col-lg-3">
+          {% if post.postimg %}
+            <img class="img-responsive" src="{{ post.postimg }}" alt="{{ post.alt }}" />
+          {% endif %}
+          {% if post.link_img %}
+            <a href="{{ post.link_img }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#2C001E;"></i>&nbsp Further Information</a>
+          {% endif %}
+        </div>
+      </div> 
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}

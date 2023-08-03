@@ -3,7 +3,7 @@ layout: default
 categories: [publication]
 pubnumber: 1
 authors: C. Müller, T. Pascher, A. Eriksson, P. Chabera, J. Uhlig
-pubtitle: KiMoPack: A python Package for Kinetic Modeling of the Chemical Mechanism
+pubtitle: 'KiMoPack: A python Package for Kinetic Modeling of the Chemical Mechanism'
 journal: J. Phys. Chem. A
 year: 2022
 volume: 126

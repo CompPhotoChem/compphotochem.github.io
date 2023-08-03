@@ -60,6 +60,6 @@ permalink: pretty
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: "posts", "pubs"
     values:
       permalink: ""

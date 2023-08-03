@@ -3,7 +3,7 @@ layout: default
 categories: [news]
 color-bg: true
 title: Formation of the Group
-date: '01.08.2023'
+datum: '01.08.2023'
 fa: 'fa-solid fa-user-group'
 postimg: 
 alt: group kickoff

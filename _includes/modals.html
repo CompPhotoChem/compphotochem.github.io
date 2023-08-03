@@ -46,6 +46,33 @@
               {% endif %}
               
             </ul>
+
+          {% if post.memberimg %}
+            <ul class="list-inline">
+              {% if member.github %}
+                <li><a href="{{ member.github }}"><i class="fa-brands fa-github" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              {% if member.orcid %}
+                <li><a href="{{ member.orcid }}"><i class="fa-brands fa-orcid" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              {% if member.researchgate %}
+                <li><a href="{{ member.google }}"><i class="fa-brands fa-researchgate" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              {% if member.google %}
+                <li><a href="{{ member.google }}"><i class="fa-brands fa-google" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              {% if member.web %}
+                <li><a href="{{ member.web }}"><i class="fa-solid fa-globe" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              {% if member.linkedin %}
+                <li><a href="{{ member.linkedin }}"><i class="fa-brands fa-linkedin" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              {% if member.twitter %}
+                <li><a href="{{ member.twitter }}"><i class="fa-brands fa-twitter" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+            </ul>
+            {% endif %}
+            
             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
               Close</button>
           </div>

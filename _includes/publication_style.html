@@ -9,18 +9,18 @@
       </div>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-lg-12 text-center">
         <h1>2023</h1>
         <br>
       </div>
-    </div>
+    </div> -->
 
     {% for pub in site.posts %}
       {% if site.categories.publication %}
         <div class="row">
           <div class="col-lg-1 text-center">
-              <h3 style="color:#7E5273"> {{ pub.number }} </h3>
+              <h3 style="color:#7E5273"> {{ pub.year }} </h3>
           </div>
           <div class="col-lg-8">
             <p>
@@ -77,7 +77,7 @@
               {% endif %}
               <!-- button database -->
               {% if pub.pubdatabase %}
-              <li ><a href="{{ pub.pubdatabase }}" class="btn btn-lg btn-success"><i class="fa-solid fa-database" style="font-size:24px;color:#ffffff;"></i>&nbsp Database &nbsp&nbsp&nbsp&nbsp </a></li>
+              <li ><a href="{{ pub.pubdatabase }}" class="btn btn-lg btn-success"><i class="fa-solid fa-database" style="font-size:24px;color:#ffffff;"></i>&nbsp Database &nbsp&nbsp&nbsp&nbsp&nbsp </a></li>
               <br><br>
               {% endif %}
             </ul>
@@ -85,15 +85,5 @@
         </div>
       {% endif %}
     {% endfor %}
-
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h1>2022</h1>
-        <br>
-      </div>
-    </div>
-
-    <p>ToDo</p>
-
   </div>
 </section>

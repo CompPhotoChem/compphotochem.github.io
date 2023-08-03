@@ -64,10 +64,10 @@
             <ul class="list-inline">
               <!-- button to website of journal open acces/closed -->
               {% if pub.pubhtmlopen %}
-                <li><a href=" " class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock-open" style="font-size:24px;color:#2C001E;"></i> &nbsp HTML </a></li>
+                <li><a href="{{ pub.pubhtmlopen }}" class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock-open" style="font-size:24px;color:#2C001E;"></i> &nbsp HTML </a></li>
               {% else %}
                 {% if pub.pubhtml %}
-                <li><a href=" " class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock" style="font-size:24px;color:#2C001E;"></i> &nbsp HTML </a></li>
+                <li><a href="{{ pub.pubhtml }}" class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock" style="font-size:24px;color:#2C001E;"></i> &nbsp HTML </a></li>
                 {% endif %}
               {% endif %}
               <!-- button arxiv -->
@@ -77,7 +77,6 @@
             </ul>
           </div>
           </div>
-
           <div class="col-lg-2">
             <ul class="list-inline">
               <!-- button pdf -->

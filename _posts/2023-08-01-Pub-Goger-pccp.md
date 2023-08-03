@@ -9,7 +9,7 @@ year: 2023
 volume:
 issue:
 doi:
-pubimg: TOC_PCCP_2023.png
+pubimg:
 alt: TOC PCCP 2023
 pubarxiv: https://chemrxiv.org/engage/chemrxiv/article-details/64649714f2112b41e9b2957e
 pubpdf: https://chemrxiv.org/engage/api-gateway/chemrxiv/assets/orp/resource/item/64649714f2112b41e9b2957e/original/data-driven-tailoring-of-molecular-dipole-polarizability-and-frontier-orbital-energies-in-chemical-compound-space.pdf
@@ -19,3 +19,5 @@ pubdata:
 pubdatabase: https://zenodo.org/record/4288677
 pubcode:
 ---
+
+<!-- pubimg: TOC_PCCP_2023.png -->

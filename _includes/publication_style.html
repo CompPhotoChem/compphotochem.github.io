@@ -28,6 +28,23 @@
               {{ pub.pubtitle }} <br>
               <i>{{ pub.journal }}</i> <b>{{ pub.year }}</b><br>
             </p>
+            {% if pub.pubimg %}
+            <br>
+            <div class="col-lg-10 text-center">
+              {% if pub.pubhtml %}
+                <a href="{{ pub.pubhtml }}" class="portfolio-link">
+                  <img class="img-responsive" src="img/pub/{{ pub.pubimg }}" alt="{{ pub.alt }}" />
+                </a>
+              {% else %}
+                <a href="{{ pub.pubarxiv }}" class="portfolio-link">
+                  <img class="img-responsive" src="img/pub/{{ pub.pubimg }}" alt="{{ pub.alt }}" />
+                </a>
+            {% endif %}
+            <ul class="list-inline">
+              <li><a href=" " class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock" style="font-size:24px;color:#2C001E;"></i> &nbsp HTML </a></li>
+              <li><a href="https://chemrxiv.org/engage/chemrxiv/article-details/64649714f2112b41e9b2957e" class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock-open" style="font-size:24px;color:#2C001E;"></i> &nbsp ChemRrxiv </a></li>
+            </ul>
+          </div>
           </div>
         </div>
       {% endif %}

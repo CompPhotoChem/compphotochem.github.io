@@ -16,16 +16,16 @@
       </div>
     </div>
 
-    {% for pubs in site %}
+    {% for pub in site.pubs %}
     <div class="row">
       <div class="col-lg-1 text-center">
-          <h3 style="color:#7E5273"> {{ pubs.number }} </h3>
+          <h3 style="color:#7E5273"> {{ pub.number }} </h3>
       </div>
       <div class="col-lg-8">
         <p>
-          {{ pubs.authors }} <br>
-          {{ pubs.title }} <br>
-          <i>{{ pubs.journal }}</i> <b>{{ pubs.year }}</b><br>
+          {{ pub.authors }} <br>
+          {{ pub.title }} <br>
+          <i>{{ pub.journal }}</i> <b>{{ pub.year }}</b><br>
         </p>
       </div>
     </div>

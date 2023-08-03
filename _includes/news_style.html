@@ -16,7 +16,15 @@
   <section class="success" id="post">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-5">
+          {% if post.postimg %}
+            <img class="img-responsive" src="{{ post.postimg }}" alt="{{ post.alt }}" />
+          {% endif %}
+          {% if post.link_img %}
+            <a href="{{ post.link_img }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#FFFFFF;"></i>&nbsp Further Information</a>
+          {% endif %}
+        </div>
+        <div class="col-lg-7">
           {% if post.fa %}
             <h3><i class="{{ post.fa }}" style="font-size:36px;color:#FFFFFF;"></i>&nbsp {{ post.datum }} – {{ post.title }}</h3><br>
           {% else %}
@@ -30,14 +38,6 @@
             <a href="{{ post.link_descr }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#FFFFFF;"></i>&nbsp Further Information</a>
           {% endif %}
         </div>
-        <div class="col-lg-3">
-          {% if post.postimg %}
-            <img class="img-responsive" src="{{ post.postimg }}" alt="{{ post.alt }}" />
-          {% endif %}
-          {% if post.link_img %}
-            <a href="{{ post.link_img }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#FFFFFF;"></i>&nbsp Further Information</a>
-          {% endif %}
-        </div>
       </div> 
     </div>
   </section>
@@ -46,7 +46,7 @@
   <section id="post">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-7">
           {% if post.fa %}
             <h3><i class="{{ post.fa }}" style="font-size:36px;color:#2C001E;"></i>&nbsp {{ post.datum }} – {{ post.title }}</h3><br>
           {% else %}
@@ -60,7 +60,7 @@
             <a href="{{ post.link_descr }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#2C001E;"></i>&nbsp Further Information</a>
           {% endif %}
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-5">
           {% if post.postimg %}
             <img class="img-responsive" src="{{ post.postimg }}" alt="{{ post.alt }}" />
           {% endif %}

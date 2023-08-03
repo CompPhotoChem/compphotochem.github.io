@@ -17,10 +17,9 @@
             <hr class="star-primary">
             {% if site.categories.example %}
               <img src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-            {% else %}
-              {% if site.categories.member %}
+            {% endif %}
+            {% if site.categories.member %}
               <img src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/members/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-              {% endif %}
             {% endif %}
             
             {% if post.description %}

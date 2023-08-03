@@ -8,7 +8,7 @@ journal: Phys. Chem. Chem. Phys.
 year: 2023
 volume: 
 issue: 
-DOI: 10.1021/acs.jpca.2c00907
+doi: 10.1021/acs.jpca.2c00907
 pubimg: TOC_PCCP_2023.png
 alt: TOC PCCP 2023
 pubarxiv: https://chemrxiv.org/engage/chemrxiv/article-details/64649714f2112b41e9b2957e

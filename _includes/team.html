@@ -63,6 +63,7 @@
     <div class="portfolio-flex-row">
       {% for member in site.categories.phdmember %}
       <div class="portfolio-flex-item portfolio-item">
+        <center><h3 style="color:#3C1028;">{{ member.title }}</h3></center>
         <a href="#portfolioModal-{{ member.modal-id }}" class="portfolio-link" data-toggle="modal">
           <div class="caption">
             <div class="caption-content">
@@ -71,7 +72,22 @@
           </div>
           <img src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/members/{{ member.img }}" class="img-responsive" alt="{{ post.alt }}">
         </a>
-        <center><h3 style="color:#3C1028;">{{ member.title }}</h3></center>
+        <center>
+          <p>
+          <!-- mail -->
+          {% if member.mail %}
+            <i class="fa-solid fa-envelope" style="font-size:16px;color:#2C001E;"></i>  <a href="mailto:{{ member.mail }}" style="color:#2C001E;">{{ member.mail }}</a><br>
+          {% endif %}
+          <!-- phone -->
+          {% if member.phone %}
+            <i class="fa-solid fa-phone" style="font-size:16px;color:#2C001E;"></i> {{ member.phone }} <br>
+          {% endif %}
+          <!-- office -->
+          {% if member.office %}
+            <i class="fa-solid fa-location-dot" style="font-size:16px;color:#2C001E;"></i> {{ member.office }} <br>
+          {% endif %}
+          </p>
+        </center>
       </div>
       {% endfor %}
     </div>

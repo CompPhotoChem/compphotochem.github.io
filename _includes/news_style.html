@@ -18,10 +18,13 @@
       <div class="row">
         <div class="col-lg-5">
           {% if post.postimg %}
-            <img class="img-responsive" src="{{ post.postimg }}" alt="{{ post.alt }}" />
+            <img class="img-responsive" src="{{ post.postimg }}" alt="{{ post.alt }}" /><br>
           {% endif %}
           {% if post.link_img %}
+            <br>
+            <center>
             <a href="{{ post.link_img }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#FFFFFF;"></i>&nbsp Further Information</a>
+            </center>
           {% endif %}
         </div>
         <div class="col-lg-7">
@@ -32,10 +35,13 @@
           {% endif %}
           <!-- description -->
           {% if post.description %}
-            <p>{{ post.description }}</p>
+            <p>{{ post.description }}</p><br>
           {% endif %}
           {% if post.link_descr %}
+            <br>
+            <center>
             <a href="{{ post.link_descr }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#FFFFFF;"></i>&nbsp Further Information</a>
+            </center>
           {% endif %}
         </div>
       </div> 
@@ -54,18 +60,24 @@
           {% endif %}
           <!-- description -->
           {% if post.description %}
-            <p>{{ post.description }}</p>
+            <p>{{ post.description }}</p><br>
           {% endif %}
           {% if post.link_descr %}
+            <center>
+            <br>
             <a href="{{ post.link_descr }}" class="btn btn-lg btn-outline"><i class="fa-solid fa-link" style="color:#2C001E;"></i>&nbsp Further Information</a>
+            </center>
           {% endif %}
         </div>
         <div class="col-lg-5">
           {% if post.postimg %}
-            <img class="img-responsive" src="{{ post.postimg }}" alt="{{ post.alt }}" />
+            <img class="img-responsive" src="{{ post.postimg }}" alt="{{ post.alt }}" /><br>
           {% endif %}
           {% if post.link_img %}
+            <center>
+            <br>
             <a href="{{ post.link_img }}" class="btn btn-lg btn-success"><i class="fa-solid fa-link" style="color:#FFFFFF;"></i>&nbsp Further Information</a>
+            </center>
           {% endif %}
         </div>
       </div> 

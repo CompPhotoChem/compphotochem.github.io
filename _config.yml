@@ -58,8 +58,14 @@ permalink: pretty
 
 #for posts
 defaults:
-  - scope:
+  - scope: Posts
       path: ""
-      type: "posts", "pubs"
+      type: "posts"
+    values:
+      permalink: ""
+      
+  - scope: Publications
+      path: ""
+      type: "pubs"
     values:
       permalink: ""

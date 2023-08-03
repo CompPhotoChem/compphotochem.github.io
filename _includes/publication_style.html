@@ -42,8 +42,18 @@
               {% endif %}
             {% endif %}
             <ul class="list-inline">
-              <li><a href=" " class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock" style="font-size:24px;color:#2C001E;"></i> &nbsp HTML </a></li>
-              <li><a href="https://chemrxiv.org/engage/chemrxiv/article-details/64649714f2112b41e9b2957e" class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock-open" style="font-size:24px;color:#2C001E;"></i> &nbsp ChemRrxiv </a></li>
+              <!-- button to website of journal open acces/closed -->
+              {% if pub.pubhtmlopen %}
+                <li><a href=" " class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock-open" style="font-size:24px;color:#2C001E;"></i> &nbsp HTML </a></li>
+              {% else %}
+                {% if pub.pubhtml %}
+                <li><a href=" " class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock" style="font-size:24px;color:#2C001E;"></i> &nbsp HTML </a></li>
+                {% endif %}
+              {% endif %}
+              <!-- button arxiv -->
+              {% if pub.pubarxiv %}
+                <li><a href="https://chemrxiv.org/engage/chemrxiv/article-details/64649714f2112b41e9b2957e" class="btn btn-lg btn-outline" style="color:#2C001E;"><i class="fa-solid fa-lock-open" style="font-size:24px;color:#2C001E;"></i> &nbsp ChemRrxiv </a></li>
+              {% endif %}
             </ul>
           </div>
           </div>

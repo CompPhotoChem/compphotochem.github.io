@@ -53,7 +53,7 @@ address:
   - line: 'Powered by Jekyll.'
 
 # Credits content
-credits: '<a href="https://compphotochem.github.io/positions/" class="btn btn-lg btn-outline">Join the Group &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br> <a href="https://compphotochem.github.io/contact/" class="btn btn-lg btn-outline">Contact the Group </a>'
+credits: '<a href="https://compphotochem.github.io/positions/" class="btn btn-lg btn-outline">Join the Group &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br> <a href="https://compphotochem.github.io/contact/" class="btn btn-lg btn-outline">Contact the Group </a>'
 
 # Build settings
 markdown: kramdown

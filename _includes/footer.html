@@ -15,6 +15,10 @@
           <h3>{{ site.footer.social }}</h3>
           <ul class="list-inline">
             {% for network in site.social %}
+            <p>
+              <a href='https://compphotochem.github.io/members/' style="color:white">The Group</a><br>
+              <a href="https://compphotochem.github.io/contact/" style="color:white">Contact</a><br>
+            </p>
             <li>
               <a href="{{ network.url }}" class="btn-social btn-outline"><i
                   class="fa-brands fa-fw fa-{{ network.title }}"></i></a>

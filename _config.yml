@@ -63,11 +63,4 @@ defaults:
       path: ""
       type: "posts"
     values:
-      permalink: ""
-      
-  - scope:
-      path: ""
-      type: "pubs"
-    values:
-      permalink: ""
-      
+      permalink: ""      

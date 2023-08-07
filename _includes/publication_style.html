@@ -45,11 +45,11 @@
               {% if pub.pubimg %}
                 <br>
                 {% if pub.pubhtml %}
-                  <a href="{{ pub.pubhtml }}" class="portfolio-link">
+                  <a href="{{ pub.pubhtml }}" class="portfolio-link" target="_blank">
                     <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/pub/{{ pub.pubimg }}" alt="{{ pub.alt }}" />
                   </a>
                 {% else %}
-                  <a href="{{ pub.pubarxiv }}" class="portfolio-link">
+                  <a href="{{ pub.pubarxiv }}" class="portfolio-link" target="_blank">
                     <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/pub/{{ pub.pubimg }}" alt="{{ pub.alt }}" />
                   </a>
                 {% endif %}

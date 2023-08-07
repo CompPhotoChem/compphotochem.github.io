@@ -4,7 +4,7 @@
   <section class="success" id="post">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-3 col-lg-offset-1">
             <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/portfolio/{{ topic.displayimg }}" alt="{{ topic.alt }}" /><br>
         </div>
         <div class="col-lg-8">
@@ -15,11 +15,12 @@
           {% if topic.description %}
             <p>{{ topic.description }}</p><br>
           {% endif %}
+        </div>
       </div>
       <!-- next row for topic img with further link -->
       {% if topic.img %}
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-3 col-lg-offset-1">
             {% if topic.further-link %}
               {% if topic.fa-link %}
                 <a href="{{ topic.further-link }}" class="btn btn-lg btn-outline" target="_blank"><i class="{{ topic.fa-link }}" style="font-size:24px;color:#ffffff;"></i> &nbsp Further Reading </a>
@@ -33,25 +34,19 @@
           </div>
         </div>
       {% endif %}
-      <div class="col-lg-12">
-        <ul class="list-inline">
-          {% if topic.category %}
-            <li><i class="fa-solid fa-layer-group" style="font-size:24px;color:#ffffff;"></i>&nbsp<b>Topic:</b> {{ topic.team }}</li>
-          {% endif %}
-          {% if topic.project %}
-            <li><i class="fa-solid fa-diagram-project" style="font-size:24px;color:#ffffff;"></i>&nbsp<b>Project:</b> {{ topic.team }}</li>
-          {% endif %}
-          {% if topic.team %}
-            <li><i class="fa-solid fa-user-group" style="font-size:24px;color:#ffffff;"></i>&nbsp<b>Team:</b> {{ topic.team }}</li>
-          {% endif %}
-        </ul>
-      </div>
-      <!-- next row for categories, projects, associated students -->
       <div class="row">
         <div class="col-lg-12 text-center">
-          {% if topic.team %}
-            <!-- <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/portfolio/{{ topic.img }}" alt="{{ topic.alt }}" /><br>-->
-          {% endif %}
+          <ul class="list-inline">
+            {% if topic.category %}
+              <li><i class="fa-solid fa-layer-group" style="font-size:24px;color:#ffffff;"></i>&nbsp<b>Topic:</b> {{ topic.team }}</li>
+            {% endif %}
+            {% if topic.project %}
+              <li><i class="fa-solid fa-diagram-project" style="font-size:24px;color:#ffffff;"></i>&nbsp<b>Project:</b> {{ topic.team }}</li>
+            {% endif %}
+            {% if topic.team %}
+              <li><i class="fa-solid fa-user-group" style="font-size:24px;color:#ffffff;"></i>&nbsp<b>Team:</b> {{ topic.team }}</li>
+            {% endif %}
+          </ul>
         </div>
       </div>
     </div>
@@ -62,7 +57,7 @@
     <div class="container">
       <div class="row">
         <!-- displayimg -->
-        <div class="col-lg-4">
+        <div class="col-lg-3 col-lg-offset-1">
             <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/portfolio/{{ topic.displayimg }}" alt="{{ topic.alt }}" /><br>
         </div>
         <!-- text -->
@@ -74,15 +69,12 @@
           {% if topic.description %}
             <p>{{ topic.description }}</p><br>
           {% endif %}
-          {% if topic.img %}
-            <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/portfolio/{{ topic.img }}" alt="{{ topic.alt }}" /><br>
-          {% endif %}
         </div>
       </div>
       <!-- next row for topic img with further link -->
       {% if topic.img %}
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-3 col-lg-offset-1">
             {% if topic.further-link %}
               {% if topic.fa-link %}
                 <a href="{{ topic.further-link }}" class="btn btn-lg btn-success" target="_blank"><i class="{{ topic.fa-link }}" style="font-size:24px;color:#ffffff;"></i> &nbsp Further Reading </a>
@@ -96,18 +88,20 @@
           </div>
         </div>
       {% endif %}
-      <div class="col-lg-12">
-        <ul class="list-inline">
-          {% if topic.category %}
-            <li><i class="fa-solid fa-layer-group" style="font-size:24px;color:#2C001E;"></i>&nbsp<b>Topic:</b> {{ topic.team }}</li>
-          {% endif %}
-          {% if topic.project %}
-            <li><i class="fa-solid fa-diagram-project" style="font-size:24px;color:#2C001E;"></i>&nbsp<b>Project:</b> {{ topic.team }}</li>
-          {% endif %}
-          {% if topic.team %}
-            <li><i class="fa-solid fa-user-group" style="font-size:24px;color:#2C001E;"></i>&nbsp<b>Team:</b> {{ topic.team }}</li>
-          {% endif %}
-        </ul>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="list-inline">
+            {% if topic.category %}
+              <li><i class="fa-solid fa-layer-group" style="font-size:24px;color:#2C001E;"></i>&nbsp<b>Topic:</b> {{ topic.team }}</li>
+            {% endif %}
+            {% if topic.project %}
+              <li><i class="fa-solid fa-diagram-project" style="font-size:24px;color:#2C001E;"></i>&nbsp<b>Project:</b> {{ topic.team }}</li>
+            {% endif %}
+            {% if topic.team %}
+              <li><i class="fa-solid fa-user-group" style="font-size:24px;color:#2C001E;"></i>&nbsp<b>Team:</b> {{ topic.team }}</li>
+            {% endif %}
+          </ul>
+        </div>
       </div>
     </div>
   </section>

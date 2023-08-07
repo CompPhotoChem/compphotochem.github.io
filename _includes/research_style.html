@@ -4,9 +4,6 @@
   <section class="success" id="post">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5">
-            <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/portfolio/{{ topic.displayimg }}" alt="{{ topic.alt }}" /><br>
-        </div>
         <div class="col-lg-7">
           <h3>{{ topic.displaytitle }}</h3>
           <!-- <hr class="star-light"> -->
@@ -18,6 +15,9 @@
           {% if topic.img %}
             <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/portfolio/{{ topic.img }}" alt="{{ topic.alt }}" /><br>
           {% endif %}
+        </div>
+        <div class="col-lg-5">
+            <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/portfolio/{{ topic.displayimg }}" alt="{{ topic.alt }}" /><br>
         </div>
       </div> 
     </div>

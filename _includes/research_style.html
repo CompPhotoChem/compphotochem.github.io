@@ -1,0 +1,51 @@
+<!-- loop over all posts -->
+{% for topic in site.categories.example %}
+  {% if topic.color-bg %}
+  <section class="success" id="post">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+            <img class="img-responsive" src="{{ topic.displayimg }}" alt="{{ topic.alt }}" /><br>
+        </div>
+        <div class="col-lg-7">
+          <h3>{{ topic.displaytitle }}</h3>
+          <hr class="star-light">
+          <br><br>
+          <!-- description -->
+          {% if topic.description %}
+            <p>{{ topic.description }}</p><br>
+          {% endif %}
+          {% if topic.img %}
+            <img class="img-responsive" src="{{ topic.img }}" alt="{{ topic.alt }}" /><br>
+          {% endif %}
+        </div>
+      </div> 
+    </div>
+  </section>
+  {% else %}
+  <!-- post with white background -->
+  <section id="post">
+    <div class="container">
+      <div class="row">
+        <!-- displayimg -->
+        <div class="col-lg-5">
+            <img class="img-responsive" src="{{ topic.displayimg }}" alt="{{ topic.alt }}" /><br>
+        </div>
+        <!-- text -->
+        <div class="col-lg-7">
+          <h3>{{ topic.displaytitle }}</h3>
+          <hr class="star-primary">
+          <br><br>
+          <!-- description -->
+          {% if topic.description %}
+            <p>{{ topic.description }}</p><br>
+          {% endif %}
+          {% if topic.img %}
+            <img class="img-responsive" src="{{ topic.img }}" alt="{{ topic.alt }}" /><br>
+          {% endif %}
+        </div>
+      </div> 
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}

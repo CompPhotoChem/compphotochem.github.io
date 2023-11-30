@@ -3,18 +3,19 @@ layout: default
 categories: [phdmember, member]
 modal-id: 5
 title: Martina Hartinger
-memberimg: member2.png
-alt: phd2
-project: Photoswitching
-description: "..."
+memberimg: martina_dez23.png
+alt: Theodor
+project: 'Photomotors & -switches'
+description: "Martina is a chemist exploring the dynamic world of molecular photomotors and -switches by means of non-adiabatic molecular dynamics simulations."
 github: https://github.com/h-martina
 linkedin: 
 orcid: 
 twitter: 
-web: 
+web: 'https://github.com/users/CompPhotoChem/projects/2'
 google: 
 researchgate: 
-mail: test@test.com
-office: X.02 
+mail: martina.hartinger@fau.de
+office: CCC 2.306
 ---
+
 

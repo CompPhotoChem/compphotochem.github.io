@@ -197,3 +197,37 @@
     </div>
   </div>
 </section>
+
+<section id="portfolio">
+  <div class="container portfolio-flex-grid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <!-- <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/GroupHeader.png" alt="Group Header" /> -->
+        <br><br> 
+        <h2>Alumni </h2>
+        <hr class="star-primary">
+        <br>
+      </div>
+    </div>
+     <div class="col-lg-12">
+      {% for member in site.categories.alumni %}
+      <center>
+          <p>
+          <ul class="list-inline">
+          <h3 style="color:#3C1028;">{{ member.title }}</h3>, 
+          <!-- mail -->
+          {% if member.mail %}
+            <i class="fa-solid fa-envelope" style="font-size:16px;color:#2C001E;"></i>  <a href="mailto:{{ member.mail }}" style="color:#2C001E;">{{ member.mail }}</a>, 
+          {% endif %}
+          <!-- uni -->
+          {% if member.university %}
+            <i class="fa-solid fa-institute" style="font-size:16px;color:#2C001E;"></i>  {{ member.university }}<br>
+          {% endif %}
+          </ul>
+        </center>
+      </div>
+      {% endfor %}
+    </div>
+    
+  </div>
+</section>

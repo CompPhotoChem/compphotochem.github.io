@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [other, member]
+categories: [alumni, member]
 modal-id: 6
 title: Nathan Pierrat
 memberimg: nathan_apr24.png

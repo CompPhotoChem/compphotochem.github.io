@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: [phdmember, member]
-modal-id: 6
+modal-id: 8
 title: Zhala Afandiyeva
 memberimg: member3.png
 alt: Zhala

@@ -14,6 +14,6 @@ twitter:
 web: 'https://github.com/users/CompPhotoChem/projects/4'
 google: 
 researchgate: 
-mail: 
+mail: zhala.afandiyeva@fau.de
 office: CCC 2.306
 ---

@@ -2,8 +2,8 @@
 layout: default
 categories: [other, member]
 modal-id: 9
-title: Connor Forster
-memberimg: member3.png
+title: 'Connor <br> Forster'
+memberimg: connor_forster.png
 alt: Connor
 project: 'Cyanine Dyes and Machine Learning'
 description: 

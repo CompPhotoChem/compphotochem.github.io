@@ -2,8 +2,8 @@
 layout: default
 categories: [phdmember, member]
 modal-id: 8
-title: Zhala Afandiyeva
-memberimg: member3.png
+title: 'Zhala <br> Afandiyeva'
+memberimg: zhala_afandiyeva.png
 alt: Zhala
 project: 'Selective Energy Transfer Catalysis'
 description: 

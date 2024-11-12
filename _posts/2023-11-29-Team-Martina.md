@@ -2,7 +2,7 @@
 layout: default
 categories: [phdmember, member]
 modal-id: 5
-title: Martina Hartinger
+title: 'Martina <br> Hartinger'
 memberimg: martina_dez23.png
 alt: Theodor
 project: 'Photomotors & -switches'

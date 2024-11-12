@@ -212,16 +212,16 @@
      <div class="col-lg-12">
       {% for member in site.categories.alumni %}
       <center>
-          <ul class="list-inline">
-          <li><p style="color:#3C1028;"><b>{{ member.title }}</b>, </p></li>
-                 <!-- uni -->
-          {% if member.university %}
-            </li><i class="fa-solid fa-location-dot" style="font-size:16px;color:#2C001E;"></i><p>{{ member.university }}, </p></li>
-          {% endif %}
-          <!-- mail -->
-          {% if member.mail %}
-            </li><i class="fa-solid fa-envelope" style="font-size:16px;color:#2C001E;"></i><p><a href="mailto:{{ member.mail }}" style="color:#2C001E;">{{ member.mail }}</a></p></li>
-          {% endif %}
+          <ul class="list-inline" style="font-size:16px;">
+            <li style="display:inline; color:#3C1028;"><b>{{ member.title }}</b>, </li>
+            <!-- university -->
+            {% if member.university %}
+              <li style="display:inline;"><i class="fa-solid fa-location-dot" style="color:#2C001E;"></i> {{ member.university }}, </li>
+            {% endif %}
+            <!-- email -->
+            {% if member.mail %}
+              <li style="display:inline;"><i class="fa-solid fa-envelope" style="color:#2C001E;"></i> <a href="mailto:{{ member.mail }}" style="color:#2C001E;">{{ member.mail }}</a></li>
+            {% endif %}
           </ul>
           <br>
       </center>

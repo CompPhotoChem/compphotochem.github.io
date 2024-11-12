@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: [news]
-color-bg: true
+color-bg:
 title: Welcome Zhala!
 datum: '01.11.2024'
 fa: 'fa-solid fa-user-group'

@@ -2,7 +2,7 @@
 layout: default
 categories: [publication]
 pubnumber: 25
-authors: C. Müller, M. Kaufmann, M. P. Brandon, A. A. Cullen, B. Dietzek-Ivanšić, M. Pryce
+authors: <b>C. Müller</b>, M. Kaufmann, M. P. Brandon, A. A. Cullen, B. Dietzek-Ivanšić, M. Pryce
 pubtitle: 'New Twist on the Light-Switch Effect: Controlling the Fate of Excited States with pH in a 4-Hydroxy-thiazol-extended Ruthenium(II) Dppz Complex'
 journal: J. Phys. Chem. A
 year: 2023

@@ -2,7 +2,7 @@
 layout: default
 categories: [publication]
 pubnumber: 27
-authors: 'B. Bagemihl, C. Müller, G. E. Shillito, M. Hartkorn, A. K. Mengele, S. Kupfer, B. Dietzek-Ivanšić, S. Rau'
+authors: 'B. Bagemihl, <b>C. Müller</b>, G. E. Shillito, M. Hartkorn, A. K. Mengele, S. Kupfer, B. Dietzek-Ivanšić, S. Rau'
 pubtitle: 'Steering Photoinduced Electron Transfer in Intramolecular Photocatalysts by Peripheral Ligand Control'
 journal: ChemistryEurope
 year: 2024

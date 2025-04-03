@@ -1,5 +1,5 @@
-
-{% for post in site.news %}
+{% assign sorted_news = site.news | sort: 'url' | reverse %}
+{% for post in sorted_news %}
   {% if post.color-bg %}
   <section class="success" id="post">
     <div class="container">

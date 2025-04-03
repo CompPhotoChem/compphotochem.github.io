@@ -2,7 +2,7 @@
 layout: default
 categories: [other, member]
 modal-id: 7
-title: Vipul Kumar Ambasta
+title: "Vipul Kumar <br> Ambasta"
 memberimg: vipul_july2024.png
 alt: Vipul Kumar Ambasta
 project: 'Computational Materials Science'

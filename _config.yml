@@ -80,4 +80,7 @@ defaults:
 
 collections:
   publications:
-    output: true
+    output: false
+  team:
+    output: false
+

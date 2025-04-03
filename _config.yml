@@ -79,6 +79,6 @@ defaults:
       permalink: ""
 
 collections:
-  team:
+  publications:
     output: true
     permalink: /:collection/:name

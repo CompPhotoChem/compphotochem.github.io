@@ -8,8 +8,9 @@
         <hr class="star-primary">
         <br>
       </div>
-        
-      {% for image in site.gallery %}
+
+      {% assign sorted_gallery = site.gallery | sort: 'url' | reverse %}
+      {% for image in sorted_gallery %}
         <div class="col-lg-3">
           {% if image.description %}
             <div class="gimage-container">

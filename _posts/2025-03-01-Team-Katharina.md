@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: [bachelor, member]
-modal-id: 12
+modal-id: 11
 title: 'Katharina <br> Fuchs'
 memberimg: female_cpc.png
 alt: K. Fuchs

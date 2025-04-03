@@ -78,3 +78,7 @@ defaults:
     values:
       permalink: ""
 
+collections:
+  team:
+    output: true
+    permalink: /:collection/:name

@@ -6,9 +6,138 @@
   {% include nav.html %}
   
   {% include team_head.html %}
-  {% include team_postdoc_doc.html %}
+  
+    <!-- postdocs automatically generated from posts folder -->
+  <section id="portfolio">
+    <section id="portfolio">
+    <div class="container portfolio-flex-grid">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br><br> 
+          <h2>Postdoctoral Researcher</h2>
+          <hr class="star-primary">
+          <br>
+        </div>
+      </div>
+      <div class="portfolio-flex-row">
+        {% for member in page.categories.postdoc %}
+        <div class="portfolio-flex-item portfolio-item">
+          <center><h3 style="color:#3C1028;">{{ member.title }}</h3></center>
+          <br>
+          <a href="#portfolioModal-{{ member.modal-id }}" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa-solid fa-circle-info" style="font-size:100px;color:#FFFFFF;"></i>
+              </div>
+            </div>
+            <img src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/members/{{ member.memberimg }}" class="img-responsive" alt="{{ post.alt }}">
+          </a>
+          <br><br>
+          <center>
+            <p>
+            <!-- mail -->
+            {% if member.mail %}
+              <i class="fa-solid fa-envelope" style="font-size:16px;color:#2C001E;"></i>  <a href="mailto:{{ member.mail }}" style="color:#2C001E;">{{ member.mail }}</a><br>
+            {% endif %}
+            <!-- phone -->
+            {% if member.phone %}
+              <i class="fa-solid fa-phone" style="font-size:16px;color:#2C001E;"></i> {{ member.phone }} <br>
+            {% endif %}
+            <!-- office -->
+            {% if member.office %}
+              <i class="fa-solid fa-location-dot" style="font-size:16px;color:#2C001E;"></i> {{ member.office }} <br>
+            {% endif %}
+            </p>
+            <br>
+            <ul class="list-inline">
+              {% if member.github %}
+                <li><a href="{{ member.github }}" target="_blank"><i class="fa-brands fa-github" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              {% if member.orcid %}
+                <li><a href="{{ member.orcid }}" target="_blank"><i class="fa-brands fa-orcid" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              {% if member.google %}
+                <li><a href="{{ member.google }}" target="_blank"><i class="fa-brands fa-google" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+            </ul>
+          </center>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <!-- PhD Member automatically generated from posts folder -->
+    <div class="container portfolio-flex-grid">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br><br> 
+          <h2>Doctoral Researcher</h2>
+          <hr class="star-primary">
+          <br>
+        </div>
+      </div>
+      <div class="portfolio-flex-row">
+        {% for member in page.categories.phdmember %}
+        <div class="portfolio-flex-item portfolio-item">
+          <center><h3 style="color:#3C1028;">{{ member.title }}</h3></center>
+          <br>
+          <a href="#portfolioModal-{{ member.modal-id }}" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa-solid fa-circle-info" style="font-size:100px;color:#FFFFFF;"></i>
+              </div>
+            </div>
+            <img src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/members/{{ member.memberimg }}" class="img-responsive" alt="{{ post.alt }}">
+          </a>
+          <br><br>
+          <center>
+            <p>
+            <!-- mail -->
+            {% if member.mail %}
+              <i class="fa-solid fa-envelope" style="font-size:16px;color:#2C001E;"></i>  <a href="mailto:{{ member.mail }}" style="color:#2C001E;">{{ member.mail }}</a><br>
+            {% endif %}
+            <!-- phone -->
+            {% if member.phone %}
+              <i class="fa-solid fa-phone" style="font-size:16px;color:#2C001E;"></i> {{ member.phone }} <br>
+            {% endif %}
+            <!-- office -->
+            {% if member.office %}
+              <i class="fa-solid fa-location-dot" style="font-size:16px;color:#2C001E;"></i> {{ member.office }} <br>
+            {% endif %}
+            </p>
+            <br>
+            <ul class="list-inline">
+              {% if member.github %}
+                <li><a href="{{ member.github }}" target="_blank"><i class="fa-brands fa-github" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              {% if member.orcid %}
+                <li><a href="{{ member.orcid }}" target="_blank"><i class="fa-brands fa-orcid" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              <!-- {% if member.researchgate %}
+                <li><a href="{{ member.google }}"><i class="fa-brands fa-researchgate" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %} -->
+              {% if member.google %}
+                <li><a href="{{ member.google }}" target="_blank"><i class="fa-brands fa-google" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %}
+              <!-- {% if member.web %}
+                <li><a href="{{ member.web }}"><i class="fa-solid fa-globe" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %} -->
+              <!-- {% if member.linkedin %}
+                <li><a href="{{ member.linkedin }}"><i class="fa-brands fa-linkedin" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %} -->
+              <!-- {% if member.twitter %}
+                <li><a href="{{ member.twitter }}"><i class="fa-brands fa-twitter" style="font-size:48px;color:#2C001E;"></i></a> </li>
+              {% endif %} -->
+            </ul>
+          </center>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+  <!--{% include team_postdoc_doc.html %}
   {% include team_master_bachelor.html %}
-  {% include team_others.html %}
+  {% include team_others.html %}-->
   
   {% include footer.html %}
   {% include modals.html %}

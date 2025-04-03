@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [phdmember, member]
+categories: [other, member]
 modal-id: 8
 title: 'Zhala <br> Afandiyeva'
 memberimg: zhala_afandiyeva.png

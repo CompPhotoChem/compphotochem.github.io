@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body id="page-top" class="index">
+  
+  {% include nav.html %}
+  <section id="member">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <br><br>
+          <h3>{{ page.title }}</h3>
+          <h4> {{ page.status }} </h4>
+          <br>
+          <hr class="star-primary">
+          <br><br>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <p>{{ page.description }}</p>
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <hr class="star-primary">
+        </div>
+      </div>
+      <br><br>
+      <div class="row">
+        <div class="col-lg-3 col-lg-offset-2">
+          <img src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/members/{{ member.memberimg }}" class="img-responsive" alt="{{ page.title }}">
+        </div>
+        <div class="col-lg-5">
+          <p>
+            <i class="fa-solid fa-user" style="font-size:20px;color:#3f0a74;"></i>&nbsp{{ page.mail }}
+          </p>
+          <br>
+          <ul class='list-inline', style="font-size:20px;">
+              <li><i class="fa-solid fa-location-dot" style="font-size:20px;color:#3f0a74;"></i>&nbsp {{ page.office }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  {% include footer.html %}
+  {% include js.html %}
+</body>
+  
+</html>

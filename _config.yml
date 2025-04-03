@@ -71,7 +71,7 @@ defaults:
 collections:
   publications:
     output: false
-  team:
+  news:
     output: false
   gallery:
     output: false

@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: [master, member]
-modal-id: 15
+modal-id: 12
 title: 'Fariba <br> Mohammadipour'
 memberimg: female_cpc.png
 alt: Fariba

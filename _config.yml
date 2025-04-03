@@ -67,16 +67,6 @@ defaults:
       type: "posts"
     values:
       permalink: ""
-  - scope:
-      path: ""
-      type: "gallery"
-    values:
-      permalink: ""
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      permalink: ""
 
 collections:
   publications:

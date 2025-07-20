@@ -69,12 +69,12 @@ defaults:
       permalink: ""
 
 collections:
+  team:
+    output: true
+    permalink: /:collection/:name
   publications:
     output: false
   news:
     output: false
   gallery:
     output: false
-  team:
-    output: true
-    permalink: /:collection/:name

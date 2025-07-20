@@ -9,8 +9,9 @@ layout: teampage
     <div class="wrapper">
       <div class="content">
 
+      {% for p in site.team %}
+
       <!-- postdocs automatically generated from posts folder -->
-      {% if site.team.categories.postdoc %}
       <section id="portfolio">
         <div class="container portfolio-flex-grid">
           <div class="row">
@@ -61,10 +62,8 @@ layout: teampage
           </div>
         </div>
       </section>
-      {% endif %}
         
       <!-- PhD Member automatically generated from posts folder -->
-      {% if p.categories.phdmember %}
       <section id="portfolio">
         <div class="container portfolio-flex-grid">
           <div class="row">
@@ -115,7 +114,7 @@ layout: teampage
         </div>
       </div>
     </section>
-    {% endif %}
+    {% endfor %}
   
       </div>
     </div>

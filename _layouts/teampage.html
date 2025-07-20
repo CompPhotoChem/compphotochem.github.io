@@ -5,10 +5,15 @@
 <body id="page-top" class="index">
   {% include nav.html %}
   
-  {% include team_head.html %}
-  {% include team_postdoc_doc.html %}
-  {% include team_master_bachelor.html %}
-  {% include team_others.html %}
+  <div class="wrapper">
+    <div class="content">
+      <section class="main">
+        {{ content }}
+      </section>
+      <!-- <div class="left-margin"></div>
+      <div class="right-margin"></div>-->
+    </div>
+  </div>
   
   {% include footer.html %}
   {% include js.html %}

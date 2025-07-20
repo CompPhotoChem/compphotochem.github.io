@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [bachelor, member]
+categories: [bachelor, alumni]
 modal-id: 11
 title: 'Katharina <br> Fuchs'
 memberimg: female_cpc.png

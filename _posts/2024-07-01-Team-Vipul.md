@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [other, alumni]
+categories: [prestine]
 modal-id: 7
 title: "Vipul Kumar <br> Ambasta"
 memberimg: vipul_july2024.png

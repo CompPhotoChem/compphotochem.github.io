@@ -15,14 +15,7 @@
       <div class="portfolio-flex-item portfolio-item">
         <center><h3 style="color:#3C1028;">{{ member.title }}</h3></center>
         <br>
-        <a href="#portfolioModal-{{ member.modal-id }}" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa-solid fa-circle-info" style="font-size:100px;color:#FFFFFF;"></i>
-            </div>
-          </div>
-          <img src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/members/{{ member.memberimg }}" class="img-responsive" alt="{{ post.alt }}">
-        </a>
+        <img src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/members/{{ member.memberimg }}" class="img-responsive" alt="{{ post.alt }}">
         <br><br>
         <center>
           <p>
@@ -71,14 +64,7 @@
       <div class="portfolio-flex-item portfolio-item">
         <center><h3 style="color:#3C1028;">{{ member.title }}</h3></center>
         <br>
-        <a href="#portfolioModal-{{ member.modal-id }}" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa-solid fa-circle-info" style="font-size:100px;color:#FFFFFF;"></i>
-            </div>
-          </div>
-          <img src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/members/{{ member.memberimg }}" class="img-responsive" alt="{{ post.alt }}">
-        </a>
+        <img src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/members/{{ member.memberimg }}" class="img-responsive" alt="{{ post.alt }}">
         <br><br>
         <center>
           <p>
@@ -103,21 +89,9 @@
             {% if member.orcid %}
               <li><a href="{{ member.orcid }}" target="_blank"><i class="fa-brands fa-orcid" style="font-size:48px;color:#2C001E;"></i></a> </li>
             {% endif %}
-            <!-- {% if member.researchgate %}
-              <li><a href="{{ member.google }}"><i class="fa-brands fa-researchgate" style="font-size:48px;color:#2C001E;"></i></a> </li>
-            {% endif %} -->
             {% if member.google %}
               <li><a href="{{ member.google }}" target="_blank"><i class="fa-brands fa-google" style="font-size:48px;color:#2C001E;"></i></a> </li>
             {% endif %}
-            <!-- {% if member.web %}
-              <li><a href="{{ member.web }}"><i class="fa-solid fa-globe" style="font-size:48px;color:#2C001E;"></i></a> </li>
-            {% endif %} -->
-            <!-- {% if member.linkedin %}
-              <li><a href="{{ member.linkedin }}"><i class="fa-brands fa-linkedin" style="font-size:48px;color:#2C001E;"></i></a> </li>
-            {% endif %} -->
-            <!-- {% if member.twitter %}
-              <li><a href="{{ member.twitter }}"><i class="fa-brands fa-twitter" style="font-size:48px;color:#2C001E;"></i></a> </li>
-            {% endif %} -->
           </ul>
         </center>
       </div>

@@ -75,3 +75,5 @@ collections:
     output: false
   gallery:
     output: false
+  team:
+    output: false

@@ -25,6 +25,7 @@
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
+            
             <ul class="list-inline item-details">
               
               {% if post.team %}
@@ -46,8 +47,7 @@
               {% endif %}
               
             </ul>
-
-          {% if post.memberimg %}
+            <br><br>
             <ul class="list-inline">
               {% if post.github %}
                 <li><a href="{{ post.github }}" target="_blank"><i class="fa-brands fa-github" style="font-size:48px;color:#2C001E;"></i></a> </li>
@@ -71,11 +71,11 @@
                 <li><a href="{{ post.twitter }}" target="_blank"><i class="fa-brands fa-twitter" style="font-size:48px;color:#2C001E;"></i></a> </li>
               {% endif %}
             </ul>
-          {% endif %}
-
-          <br><br>
-          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-            Close</button>
+            <br><br>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+              Close
+            </button>
+          
           </div>
         </div>
       </div>

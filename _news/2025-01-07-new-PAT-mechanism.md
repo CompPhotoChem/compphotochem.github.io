@@ -2,7 +2,7 @@
 layout: default
 categories: [news]
 color-bg: false
-title: 
+title: From Triplet to Twist
 datum: '01.07.2025'
 fa: 'fa-solid fa-newspaper'
 postimg: "https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/gallery/social_TOC_ACIE2025_PAT-mech.jpeg"

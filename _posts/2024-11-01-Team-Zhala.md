@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [other, alumni]
+categories: [prestine]
 modal-id: 8
 title: 'Zhala <br> Afandiyeva'
 memberimg: zhala_afandiyeva.png

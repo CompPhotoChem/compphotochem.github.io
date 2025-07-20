@@ -11,9 +11,12 @@
     </div>
 
     {% assign sorted_gallery = site.gallery | sort: 'url' | reverse %}
+    
     {% for image in sorted_gallery %}
-      {% if forloop.index0 | modulo: 4 == 0 %}
-        <div class="row">
+      {% assign mod = forloop.index0 | modulo: 4 %}
+      
+      {% if mod == 0 %}
+        <div class="row"> <!-- ✅ Open row every 4 items -->
       {% endif %}
 
       <div class="col-lg-3">
@@ -29,8 +32,8 @@
         {% endif %}
       </div>
 
-      {% if forloop.index0 | modulo: 4 == 3 or forloop.last %}
-        </div>
+      {% if mod == 3 or forloop.last %}
+        </div> <!-- ✅ Close row after 4 items or at the end -->
       {% endif %}
     {% endfor %}
   </div>

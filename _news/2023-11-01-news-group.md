@@ -1,7 +1,7 @@
 ---
 layout: default
 categories: [news]
-color-bg: true
+color-bg: false
 title: Formation of the Group
 datum: '02.11.2023'
 fa: 'fa-solid fa-user-group'

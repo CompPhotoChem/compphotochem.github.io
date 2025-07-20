@@ -1,4 +1,4 @@
-<!-- actual code -->
+
 <section id="gallery">
   <div class="container">
     <div class="row">
@@ -10,29 +10,28 @@
       </div>
     </div>
 
-  {% assign sorted_gallery = site.gallery | sort: 'url' | reverse %}
-  {% for image in sorted_gallery %}
-    {% if forloop.index0 modulo 4 == 0 %}
-      <div class="row">
-    {% endif %}
-  
-    <div class="col-lg-3">
-      {% if image.description %}
-        <div class="gimage-container">
-          <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/gallery/{{ image.galleryimg }}" alt="{{ image.alt }}"/>
-          <div class="gimage-hover">
-            <p>{{ image.description }}</p>
-          </div>
-        </div>
-      {% else %}
-        <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/gallery/{{ image.galleryimg }}" alt="{{ image.alt }}"/>
+    {% assign sorted_gallery = site.gallery | sort: 'url' | reverse %}
+    {% for image in sorted_gallery %}
+      {% if forloop.index0 | modulo: 4 == 0 %}
+        <div class="row">
       {% endif %}
-    </div>
-  
-    {% if forloop.index0 modulo 4 == 3 or forloop.last %}
+
+      <div class="col-lg-3">
+        {% if image.description %}
+          <div class="gimage-container">
+            <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/gallery/{{ image.galleryimg }}" alt="{{ image.alt }}"/>
+            <div class="gimage-hover">
+              <p>{{ image.description }}</p>
+            </div>
+          </div>
+        {% else %}
+          <img class="img-responsive" src="https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/gallery/{{ image.galleryimg }}" alt="{{ image.alt }}"/>
+        {% endif %}
       </div>
-    {% endif %}
-  {% endfor %}
-    
+
+      {% if forloop.index0 | modulo: 4 == 3 or forloop.last %}
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </section>

@@ -20,26 +20,26 @@
         <center>
           <p>
           {% if member.mail %}
-            <i class="fa-solid fa-envelope" style="font-size:16px;color:#FFFFFF;"></i>  
-            <a href="mailto:{{ member.mail }}" style="color:#2C001E;">{{ member.mail }}</a><br>
+            <i class="fa-solid fa-envelope" style="font-size:16px;color:#2C001E;"></i>  
+            <a href="mailto:{{ member.mail }}" style="color:#FFFFFF;">{{ member.mail }}</a><br>
           {% endif %}
           {% if member.phone %}
-            <i class="fa-solid fa-phone" style="font-size:16px;color:#FFFFFF;"></i> {{ member.phone }} <br>
+            <i class="fa-solid fa-phone" style="font-size:16px;color:#2C001E;"></i> {{ member.phone }} <br>
           {% endif %}
           {% if member.office %}
-            <i class="fa-solid fa-location-dot" style="font-size:16px;color:#FFFFFF;"></i> {{ member.office }} <br>
+            <i class="fa-solid fa-location-dot" style="font-size:16px;color:#2C001E;"></i> {{ member.office }} <br>
           {% endif %}
           </p>
           <br>
           <ul class="list-inline">
             {% if member.github %}
-              <li><a href="{{ member.github }}" target="_blank"><i class="fa-brands fa-github" style="font-size:48px;color:#FFFFFF;"></i></a> </li>
+              <li><a href="{{ member.github }}" target="_blank"><i class="fa-brands fa-github" style="font-size:48px;color:#2C001E;"></i></a> </li>
             {% endif %}
             {% if member.orcid %}
-              <li><a href="{{ member.orcid }}" target="_blank"><i class="fa-brands fa-orcid" style="font-size:48px;color:#FFFFFF;"></i></a> </li>
+              <li><a href="{{ member.orcid }}" target="_blank"><i class="fa-brands fa-orcid" style="font-size:48px;color:#2C001E;"></i></a> </li>
             {% endif %}
             {% if member.google %}
-              <li><a href="{{ member.google }}" target="_blank"><i class="fa-brands fa-google" style="font-size:48px;color:#FFFFFF;"></i></a> </li>
+              <li><a href="{{ member.google }}" target="_blank"><i class="fa-brands fa-google" style="font-size:48px;color:#2C001E;"></i></a> </li>
             {% endif %}
           </ul>
         </center>

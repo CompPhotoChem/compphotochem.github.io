@@ -76,4 +76,5 @@ collections:
   gallery:
     output: false
   team:
-    output: false
+    output: true
+    permalink: /:collection/:name

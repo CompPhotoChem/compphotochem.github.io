@@ -12,7 +12,7 @@ It includes quantum chemical properties in ground and electronically excited sin
 Generated with state-of-the-art methods, SHNITSEL-data supports the development of machine learning models for excited-state processes in photochemistry and photophysics.
 <br><br>
 Check out this collaborative work from the Julia Westermayr and our lab (Theodor Röhrkasten): 
-<a href='https://rdcu.be/exV8r', target='_blank'>Link to Open-Access Sci Data Article</a>
+<a href='https://rdcu.be/exV8r', target='_blank'>Link to Open-Access Sci Data Article</a>, 
 <a href='https://shnitsel.github.io/molecules/', target='_blank'>Project Website</a>
 "
 link_descr: https://rdcu.be/exV8r

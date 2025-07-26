@@ -12,7 +12,7 @@ Guided by excited-state simulations, its mechanism of motion is fully revealed.
 We show that PAT double bond rotation occurs exclusively from the triplet state – but it is stable in air due to very favorable energy levels.
 <br><br>
 Check out this collaborative work from the Dirk Guldi, Henry Dube and our lab (Martina Hartinger): 
-<a href='https://onlinelibrary.wiley.com/doi/10.1002/anie.202510626', target='_blank'>Link to Journal Artcile</a>.
+<a href='https://onlinelibrary.wiley.com/doi/10.1002/anie.202510626', target='_blank'>Link to Journal Article</a>.
 "
 link_descr: https://onlinelibrary.wiley.com/doi/10.1002/anie.202510626
 link_img: 

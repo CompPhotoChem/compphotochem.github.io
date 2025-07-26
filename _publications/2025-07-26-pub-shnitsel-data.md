@@ -9,7 +9,7 @@ year: 2025
 volume: 12
 issue: 1300
 doi: '10.1038/s41597-025-05443-5'
-pubimg: 'gallery/TOC_cpc_shnitsel-data.png'
+pubimg: '../gallery/TOC_cpc_shnitsel-data.png'
 alt: TOC SHNITSEL-data
 pubarxiv:
 pubpdf: https://onlinelibrary.wiley.com/doi/pdf/10.1002/anie.202510626

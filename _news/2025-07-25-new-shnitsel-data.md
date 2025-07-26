@@ -5,7 +5,7 @@ color-bg: false
 title: SHNITSEL-data
 datum: '26.07.2025'
 fa: 'fa-solid fa-newspaper'
-postimg: "https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/gallery/TOC_shnitsel.png"
+postimg: "https://raw.githubusercontent.com/CompPhotoChem/compphotochem.github.io/main/img/gallery/TOC_cpc_shnitsel-data.png"
 alt: "TOC Figure, SHNITSEL-data, social-media"
 description: "SHNITSEL-data (Surface Hopping Nested Instances Training Set for Excited-state Learning) is an open-access dataset containing 418,870 high-accuracy ab initio data points for nine organic molecules. 
 It includes quantum chemical properties in ground and electronically excited singlet and triplet states, such as energies, forces, dipole moments, nonadiabatic couplings, transition dipoles, and spin-orbit couplings. 

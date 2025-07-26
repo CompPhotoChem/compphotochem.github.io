@@ -1,0 +1,21 @@
+---
+layout: default
+categories: [publication]
+pubnumber: 31
+authors: 'R. Curth, T. Röhrkasten, C. Müller, J. Westermayr'
+pubtitle: 'Surface Hopping Nested Instances Training Set for Excited-state Learning'
+journal: 'Sci Data'
+year: 2025
+volume: 12
+issue: 1300
+doi: '10.1038/s41597-025-05443-5'
+pubimg: 'gallery/TOC_cpc_shnitsel-data.png'
+alt: TOC SHNITSEL-data
+pubarxiv:
+pubpdf: https://onlinelibrary.wiley.com/doi/pdf/10.1002/anie.202510626
+pubhtml: https://doi.org/10.1038/s41597-025-05443-5
+pubhtmlopen: https://doi.org/10.1038/s41597-025-05443-5
+pubdata: https://shnitsel.github.io/molecules/
+pubdatabase: https://doi.org/10.5281/zenodo.15482819.
+pubcode:
+---

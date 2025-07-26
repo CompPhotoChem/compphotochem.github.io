@@ -9,7 +9,7 @@ year: 2025
 volume: 
 issue: e202510626
 doi: '10.1002/anie.202510626'
-pubimg: 'gallery/social_TOC_ACIE2025_PAT-mech.jpeg'
+pubimg: '../gallery/social_TOC_ACIE2025_PAT-mech.jpeg'
 alt: TOC PAT mechanism
 pubarxiv: https://chemrxiv.org/engage/chemrxiv/article-details/6824d5ac927d1c2e66c314e9
 pubpdf: https://onlinelibrary.wiley.com/doi/pdf/10.1002/anie.202510626

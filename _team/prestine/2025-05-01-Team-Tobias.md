@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [bachelor, member]
+categories: [prestine]
 modal-id: 15
 title: 'Tobias <br> Werner'
 memberimg: male_cpc.png

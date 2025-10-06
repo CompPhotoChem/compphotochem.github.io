@@ -15,5 +15,5 @@ web:
 google: 
 researchgate: 
 mail: vipul.kumar.ambasta@fau.de
-office: 2.306
+office: CCC 2.306
 ---

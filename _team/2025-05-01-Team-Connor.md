@@ -14,6 +14,6 @@ twitter:
 web:
 google:
 researchgate:
-mail:
-office:
+mail: connor.forster@fau.de
+office: CCC 2.306
 ---

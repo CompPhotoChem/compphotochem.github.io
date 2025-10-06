@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [bachelor, member]
+categories: [prestine]
 modal-id: 16
 title: 'Dario <br> Karlovic'
 memberimg: male_cpc.png

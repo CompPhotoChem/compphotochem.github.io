@@ -1,6 +1,6 @@
 ---
 layout: default
-categories: [bachelor, member]
+categories: [others, member]
 modal-id: 14
 title: 'Connor <br> Forster'
 memberimg: connor_forster.png

@@ -15,5 +15,5 @@ web:
 google:
 researchgate:
 mail: kevin.hoellring@fau.de
-office: 2.306
+office: CCC 2.306
 ---
